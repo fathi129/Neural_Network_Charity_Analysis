@@ -28,13 +28,14 @@ we will use the features in the provided dataset to create a binary classifier t
 ## Results
 ## Deliverable 1: Preprocessing Data for a Neural Network Model
 Using the knowledge of Pandas and the Scikit-Learn’s StandardScaler(), we will preprocess the dataset in order to compile, train, and evaluate the neural network model.Read in the charity_data.csv to a Pandas DataFrame, and define taget and feature variables for the model.Drop the EIN and NAME columns.
-Determine the number of unique values for each column.For those columns that have more than 10 unique values, determine the number of data points for each unique value.Create a density plot to determine the distribution of the column values.Use the density plot to create a cutoff point to bin "rare" categorical variables together in a new column, Other, and then check if the binning was successful.
+Determine the number of unique values for each column.For those columns that have more than 10 unique values, determine the number of data points for each unique value.Create a density plot to determine the distribution of the column values.Use the density plot to create a cutoff point to bin "rare" categorical variables together in a new column, Other, and then check if the binning was successful.<br>
+The density plot for application count is calculated and count < 500 is binned as others.
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/application_count_plot.png"  width = 600><br>
+The density plot for classification count is calculated and count < 1000 is binned as others.<br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/classification_count.png"  width = 600><br>
 Generate a list of categorical variables.Encode categorical variables using one-hot encoding, and place the variables in a new DataFrame.
 Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.At this point, the merged DataFrame should look like this:
-<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Merged_df.png"  width = 600><br>
-
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Merged_df.png"  width = 800><br>
 Split the preprocessed data into features and target arrays.Split the preprocessed data into training and testing datasets.
 Standardize numerical variables using Scikit-Learn’s StandardScaler class, then scale the data.
 

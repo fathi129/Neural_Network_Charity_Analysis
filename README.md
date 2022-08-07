@@ -57,20 +57,31 @@ Adjusting the input data to ensure that there are no variables or outliers that 
 - Adding more hidden layers.
 - Using different activation functions for the hidden layers.
 - Adding or reducing the number of epochs to the training regimen.<br>
+- 
 ### Attempt 1:Dropping EIN Column alone
-By dropping EIN column alone. we will compile, train, and evaluate our binary classification model to calculate the model’s loss and accuracy.
+By dropping EIN column alone. we will compile, train, and evaluate our binary classification model to calculate the model’s loss and accuracy.We have calculated the name count using the density plot.<br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_namecount_density.png"  width = 600><br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt1_accuracy.png"  width = 600><br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt1.png"  width = 600><br>
+We can see the model has accuracy of 79% and loss of 46% by adding the NAME column for the training dataset.<br>
+
 ### Attempt 2: Reducing the number of nodes
+By reducing the number of neurons i.e hidden nodes in layer 1 as 5 and hidden nodes in layer as 4.we will compile, train, and evaluate our binary classification model to calculate the model’s loss and accuracy.
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt2_accuracy.png"  width = 600><br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt2.png"  width = 600><br>
+We can see that the model has produced an accuracy of 78% and loss of 45% by decreasing the number of neurons in both the layers.
+
 ### Attempt 3: Adding hidden layer
+By adding the third hidden layer.The first hidden layer has input nodes of 4,The second hidden layer has input nodes of 3 and the third hidden layer has input nodes of 3,we will compile, train, and evaluate our binary classification model to calculate the model’s loss and accuracy.<br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt3_accuracy.png"  width = 600><br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt3.png"  width = 600><br>
+We can see that the model has produced an accuracy of 76% and loss of 48% by adding the third hidden layer.
+
 ### Attempt 4: Changing from Relu to Tanh activation
+By changing the activation function from relu to tanh.we will compile, train, and evaluate our binary classification model to calculate the model’s loss and accuracy.
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attemp4_accuracy.png"  width = 600><br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt4.png"  width = 600><br>
+We can see that the model has produced an accuracy of 79% and loss of 44% by changing the activation function from relu to tanh.
 
 ## Summary
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.

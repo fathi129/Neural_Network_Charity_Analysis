@@ -34,7 +34,7 @@ The density plot for application count is calculated and count < 500 is binned a
 The density plot for classification count is calculated and count < 1000 is binned as others.<br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/classification_count.png"  width = 600><br>
 Generate a list of categorical variables.Encode categorical variables using one-hot encoding, and place the variables in a new DataFrame.
-Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.At this point, the merged DataFrame should look like this:
+Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.At this point, the merged DataFrame should look like this:<br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Merged_df.png"  width = 900><br>
 Split the preprocessed data into features and target arrays.Split the preprocessed data into training and testing datasets.
 Standardize numerical variables using Scikit-Learn’s StandardScaler class, then scale the data.

@@ -57,8 +57,8 @@ Adjusting the input data to ensure that there are no variables or outliers that 
 - Adding more hidden layers.
 - Using different activation functions for the hidden layers.
 - Adding or reducing the number of epochs to the training regimen.<br>
-- 
-### Attempt 1:Dropping EIN Column alone
+
+### Attempt 1: Dropping EIN Column alone
 By dropping EIN column alone. we will compile, train, and evaluate our binary classification model to calculate the model’s loss and accuracy.We have calculated the name count using the density plot.<br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_namecount_density.png"  width = 600><br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt1_accuracy.png"  width = 900><br>

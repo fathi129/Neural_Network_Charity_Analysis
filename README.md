@@ -84,4 +84,5 @@ By changing the activation function from relu to tanh.we will compile, train, an
 We can see that the model has produced an accuracy of 79% and loss of 44% by changing the activation function from relu to tanh.
 
 ## Summary
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+By the addition of NAME column,reducing neurons,adding hidden layers and changing activation functions, the accuracy of the optimized model for predicting whether a donation is successful ended up being 79% and its loss metric was 46%.
+A random forest model is recommended,which could solve this classification problem by randomly sampling the preprocessed data.Some benefits of using a random forest model include its robustness and it avoids overfitting of the data.Random forest models have been a staple in machine learning algorithms for many years due to their robustness and scalability. Both output and feature selection of random forest models are easy to interpret, and they can easily handle outliers and nonlinear data.The random forest model achieves comparable predictive accuracy on large tabular data with less code and faster performance. 

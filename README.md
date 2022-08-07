@@ -35,25 +35,16 @@ The density plot for classification count is calculated and count < 1000 is binn
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/classification_count.png"  width = 600><br>
 Generate a list of categorical variables.Encode categorical variables using one-hot encoding, and place the variables in a new DataFrame.
 Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.At this point, the merged DataFrame should look like this:
-<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Merged_df.png"  width = 800><br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Merged_df.png"  width = 900><br>
 Split the preprocessed data into features and target arrays.Split the preprocessed data into training and testing datasets.
 Standardize numerical variables using Scikit-Learn’s StandardScaler class, then scale the data.
 
 ## Deliverable 2: Compile, Train, and Evaluate the Model
-
-Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
-Follow the instructions below and use the information file to complete Deliverable 2.
-
-Continue using the AlphabetSoupCharity.ipynb file where you’ve already performed the preprocessing steps from Deliverable 1.
-Create a neural network model by assigning the number of input features and nodes for each layer using Tensorflow Keras.
-Create the first hidden layer and choose an appropriate activation function.
-If necessary, add a second hidden layer with an appropriate activation function.
-Create an output layer with an appropriate activation function.
-Check the structure of the model.
-Compile and train the model.
-Create a callback that saves the model's weights every 5 epochs.
-Evaluate the model using the test data to determine the loss and accuracy.
-Save and export your results to an HDF5 file, and name it AlphabetSoupCharity.h5.
+Using the knowledge of TensorFlow, we will design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset. we will need to think about how many inputs there are before determining the number of neurons and layers in our model. Once we have completed that step, we will compile, train, and evaluate our binary classification model to calculate the model’s loss and accuracy.After preprocessing the data,Create a neural network model by assigning the number of input features and nodes for each layer using Tensorflow Keras.Create the first hidden layer and choose an appropriate activation function as relu.Create the second hidden layer and choose an appropriate activation function as relu.Create an output layer with an appropriate activation function as sigmoid.Check the structure of the model.<br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Del2_Model.png"  width = 900><br>
+Compile and train the model.Create a callback that saves the model's weights every 5 epochs.Evaluate the model using the test data to determine the loss and accuracy.Save and export your results to an HDF5 file, and name it AlphabetSoupCharity.h5.<br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Accuracy_del1.png"  width = 900><br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del2_Accuracy_plot.png"  width = 900><br>
 
 
 ## Deliverable 3: Optimize the Model

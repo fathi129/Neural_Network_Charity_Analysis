@@ -44,27 +44,33 @@ Using the knowledge of TensorFlow, we will design a neural network, or deep lear
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Del2_Model.png"  width = 900><br>
 Compile and train the model.Create a callback that saves the model's weights every 5 epochs.Evaluate the model using the test data to determine the loss and accuracy.Save and export your results to an HDF5 file, and name it AlphabetSoupCharity.h5.<br>
 <img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Accuracy_del1.png"  width = 900><br>
-<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del2_Accuracy_plot.png"  width = 900><br>
-
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del2_Accuracy_plot.png"  width = 600><br>
+We can see that the model produced the accuracy of 73% and loss of 56%
 
 ## Deliverable 3: Optimize the Model
-Using your knowledge of TensorFlow, optimize your model in order to achieve a target predictive accuracy higher than 75%. If you can't achieve an accuracy higher than 75%, you'll need to make at least three attempts to do so.
-
-Optimize your model in order to achieve a target predictive accuracy higher than 75% by using any or all of the following:
-
-Adjusting the input data to ensure that there are no variables or outliers that are causing confusion in the model, such as:
-Dropping more or fewer columns.
-Creating more bins for rare occurrences in columns.
-Increasing or decreasing the number of values for each bin.
-Adding more neurons to a hidden layer.
-Adding more hidden layers.
-Using different activation functions for the hidden layers.
-Adding or reducing the number of epochs to the training regimen.
-
+To optimize our model in order to achieve a target predictive accuracy higher than 75% by using any or all of the following:<br>
+Adjusting the input data to ensure that there are no variables or outliers that are causing confusion in the model, such as:<br>
+- Dropping more or fewer columns.
+- Creating more bins for rare occurrences in columns.
+- Increasing or decreasing the number of values for each bin.
+- Adding more neurons to a hidden layer.
+- Adding more hidden layers.
+- Using different activation functions for the hidden layers.
+- Adding or reducing the number of epochs to the training regimen.<br>
 ### Attempt 1:Dropping EIN Column alone
+By dropping EIN column alone. we will compile, train, and evaluate our binary classification model to calculate the model’s loss and accuracy.
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_namecount_density.png"  width = 600><br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt1_accuracy.png"  width = 600><br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt1.png"  width = 600><br>
 ### Attempt 2: Reducing the number of nodes
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt2_accuracy.png"  width = 600><br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt2.png"  width = 600><br>
 ### Attempt 3: Adding hidden layer
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt3_accuracy.png"  width = 600><br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt3.png"  width = 600><br>
 ### Attempt 4: Changing from Relu to Tanh activation
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attemp4_accuracy.png"  width = 600><br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/del3_attempt4.png"  width = 600><br>
 
 ## Summary
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.

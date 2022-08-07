@@ -1,31 +1,23 @@
 # Neural_Network_Charity_Analysis
-A binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup is created.
+A deep learning neural network model that is capable of predicting whether applicants will be successful if funded by Alphabet Soup is created.
 
 ## Overview of the Analysis
-
-
-
-
+A neural network is a powerful machine learning technique that is modeled after neurons in the brain.It can rival the performance of the most robust statistical algorithms without having the statistical theory.Neural networks are used for analyzing images and Natural Language Processing datasets.It gives robust deep learning models for complex and irregular data.We will explore and implement neural network models using the Python's tensor flow library.
 
 ## Purpose of the Analysis
-Beks has come a long way since her first day at that boot camp five years ago—and since earlier this week, when she started learning about neural networks! Now, she is finally ready to put her skills to work to help the foundation predict where to make investments.
-
-With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to help Beks create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
-
-From Alphabet Soup’s business team, Beks received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
-
-EIN and NAME—Identification columns
-APPLICATION_TYPE—Alphabet Soup application type
-AFFILIATION—Affiliated sector of industry
-CLASSIFICATION—Government organization classification
-USE_CASE—Use case for funding
-ORGANIZATION—Organization type
-STATUS—Active status
-INCOME_AMT—Income classification
-SPECIAL_CONSIDERATIONS—Special consideration for application
-ASK_AMT—Funding amount requested
-IS_SUCCESSFUL—Was the money used effectively
-
+The aim of this analysis is to analyse the impact of each donation and potential recipients of the Alphabet Soup company.This help's to ensure that the foundation money is being used effectively.Unfortunately not every donation,the company makes is impactful.In some cases the organization will take the money and disappear.To predict which organizations are worth donating and which organizations are at high risk,we create a mathematical data driven solution.We will be designing and training a deep learning neural network model which evaluates all types of input data and produces a clear decision making result.
+we will use the features in the provided dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.From Alphabet Soup’s business team,we received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
+- EIN and NAME—Identification columns
+- APPLICATION_TYPE—Alphabet Soup application type
+- AFFILIATION—Affiliated sector of industry
+- CLASSIFICATION—Government organization classification
+- USE_CASE—Use case for funding
+- ORGANIZATION—Organization type
+- STATUS—Active status
+- INCOME_AMT—Income classification
+- SPECIAL_CONSIDERATIONS—Special consideration for application
+- ASK_AMT—Funding amount requested
+- IS_SUCCESSFUL—Was the money used effectively
 
 ## Resources Used
 *DataSources*:  [charity_data.csv](https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Resources/charity_data.csv)<br>
@@ -33,35 +25,18 @@ IS_SUCCESSFUL—Was the money used effectively
 *Language*: Python<br>
 *Libraries*: tensor-flow,scikit-learn. <br>
 
-
 ## Results
 ## Deliverable 1: Preprocessing Data for a Neural Network Model
-Using your knowledge of Pandas and the Scikit-Learn’s StandardScaler(), you’ll need to preprocess the dataset in order to compile, train, and evaluate the neural network model later in Deliverable 2.
-Follow the instructions below and use the AlphabetSoupCharity_starter_code.ipynb file to complete Deliverable 1.
+Using the knowledge of Pandas and the Scikit-Learn’s StandardScaler(), we will preprocess the dataset in order to compile, train, and evaluate the neural network model.Read in the charity_data.csv to a Pandas DataFrame, and define taget and feature variables for the model.Drop the EIN and NAME columns.
+Determine the number of unique values for each column.For those columns that have more than 10 unique values, determine the number of data points for each unique value.Create a density plot to determine the distribution of the column values.Use the density plot to create a cutoff point to bin "rare" categorical variables together in a new column, Other, and then check if the binning was successful.
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/application_count_plot.png"  width = 600><br>
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/classification_count.png"  width = 600><br>
+Generate a list of categorical variables.Encode categorical variables using one-hot encoding, and place the variables in a new DataFrame.
+Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.At this point, the merged DataFrame should look like this:
+<img src = "https://github.com/fathi129/Neural_Network_Charity_Analysis/blob/master/Screenshots%20of%20Neural%20n:w/Merged_df.png"  width = 600><br>
 
-Open the AlphabetSoupCharity_starter_code.ipynb file, rename it AlphabetSoupCharity.ipynb, and save it to your Neural_Network_Charity_Analysis GitHub folder.
-
-Using the information we have provided in the starter code, follow the instructions to complete the preprocessing steps.
-
-Read in the charity_data.csv to a Pandas DataFrame, and be sure to identify the following in your dataset:
-What variable(s) are considered the target(s) for your model?
-What variable(s) are considered the feature(s) for your model?
-Drop the EIN and NAME columns.
-Determine the number of unique values for each column.
-For those columns that have more than 10 unique values, determine the number of data points for each unique value.
-Create a density plot to determine the distribution of the column values.
-Use the density plot to create a cutoff point to bin "rare" categorical variables together in a new column, Other, and then check if the binning was successful.
-Generate a list of categorical variables.
-Encode categorical variables using one-hot encoding, and place the variables in a new DataFrame.
-Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.
-At this point, your merged DataFrame should look like this:
-
-Split the preprocessed data into features and target arrays.
-Split the preprocessed data into training and testing datasets.
+Split the preprocessed data into features and target arrays.Split the preprocessed data into training and testing datasets.
 Standardize numerical variables using Scikit-Learn’s StandardScaler class, then scale the data.
-Save your AlphabetSoupCharity.ipynb file to your Neural_Network_Charity_Analysis folder.
-
-
 
 ## Deliverable 2: Compile, Train, and Evaluate the Model
 
